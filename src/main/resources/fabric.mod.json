@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "anti-chat",
+	"version": "${version}",
+	"name": "Anti-Chat",
+	"description": "A simple mod intended to prevent you from mistakenly sending a message to regular chat rather than IRC when macroing on Skyblock.",
+	"authors": [
+		"darraghd493"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/anti-chat/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			{
+				"value": "me.darragh.antichat.AntiChat",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
